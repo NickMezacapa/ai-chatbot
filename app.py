@@ -1,9 +1,14 @@
+from anton import ask, append_interaction_to_chat_log
+from dotenv import load_dotenv
 from flask import Flask, request, session
 from twilio.twiml.messaging_response import MessagingResponse
-from anton import ask, append_interaction_to_chat_log
+import os
+
+
+load_dotenv()
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "89djhff9lhkd93"
+app.config['SECRET_KEY'] = os.getenv('APP_CONFIG_KEY')
 
 
 # Web hook that will be called by Twilio when a message is sent to our Twilio number.
