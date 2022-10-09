@@ -6,7 +6,7 @@ import openai
 
 # get api keys
 load_dotenv()
-# open.api_key = os.getenv('OPEN_AI_API_KEY')
+open.api_key = os.getenv('OPEN_AI_API_KEY')
 completion = openai.Completion()
 
 openai.api_key = os.getenv("OPEN_AI_API_KEY")
@@ -41,8 +41,4 @@ def ask(question, chat_log=None):
 def append_interaction_to_chat_log(question, answer, chat_log=None):
     if chat_log is None:
         chat_log = session_prompt
-    if len(chat_log) < 10:
-        return f"{chat_log}{restart_sequence} {question}{start_sequence}{answer}"
-    else:
-        chat_log.pop(0)
         return f"{chat_log}{restart_sequence} {question}{start_sequence}{answer}"
