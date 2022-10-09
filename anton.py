@@ -4,6 +4,7 @@ from flask import flask, request
 import os
 import openai
 
+# get api keys
 load_dotenv()
 open.api_key = os.getenv('OPEN_AI_API_KEY')
 completion = openai.Completion()
