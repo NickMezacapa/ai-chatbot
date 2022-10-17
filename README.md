@@ -1,5 +1,5 @@
 # GPT3 AI chatbot for group messages
-This is a messaging chatbot that is driven by OpenAI's GPT3 model. The chatbot is fully capable of understanding human text, is able to detect who is speaking in a groupchat, and responds in complete sentences. It's fascinaitng to see the bot have near-human levels of consciousness and it opens up a wide range of applications where artificial intelligence can improve everyday life.
+This is a messaging chatbot driven by OpenAI's GPT3 model. The chatbot is fully capable of understanding human text, is able to detect who is speaking in a groupchat, and responds in complete sentences. It's fascinaitng to see the bot have near-human levels of consciousness and it opens up a wide range of applications where artificial intelligence can improve everyday life.
 
 ### In order to replicate this chatbot:
 - You must have an OpenAI API key
